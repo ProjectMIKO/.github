@@ -15,20 +15,23 @@ MIKO는 이러한 필요를 충족시키기 위해 개발된 서비스로, 실�
 
 | **Name**     | 안태리                                                                  | 정재혁                                                                  |남청우                                                                   | 유흥국                                                                  | 문건우                                                                                                                                  
 |:------------:|:--------------------------------------------------------------------:|:--------------------------------------------------------------------:|:--------------------------------------------------------------------:|:--------------------------------------------------------------------:|:--------------------------------------------------------------------:|
-| **Profile**  |<img width="120" src="">|<img width="120" src=""> | <img width="120" src="https://github.com/user-attachments/assets/05b6f94f-50c2-43d1-bc2b-228fbe8ceb2f">| <img width="120" src=""> | <img width="120" src=""> |  
+| **Profile**  |<img height="150" src="https://github.com/user-attachments/assets/7eaa7527-cd2d-48dd-9d67-3e47cf67cbd5">|<img height="150" src="https://github.com/user-attachments/assets/0afa4fed-4a82-4b1e-b328-fc8a9c9be896"> | <img height="150" src="https://github.com/user-attachments/assets/05b6f94f-50c2-43d1-bc2b-228fbe8ceb2f">| <img height="150" src="https://github.com/user-attachments/assets/673d808c-6562-4d9c-b8c1-c9aad1be12c2"> | <img height="150" src="https://github.com/user-attachments/assets/7dfe0f58-8722-4018-93c3-8fdea8544211"> |  
 | **Position** | Backend <br/> (팀장)      | Backend              | Backend          | Frontend                   | Frontend            | 
 | **Git** | [@T3rryAhn](https://github.com/T3rryAhn)       | [@Arklimits](https://github.com/Arklimits)    | [@malgcheong](https://github.com/malgcheong)      | [@hkyoo988](https://github.com/hkyoo988)    | [@GEONU-MOON](https://github.com/GEONU-MOON)            | 
 
 ## MIIKO 레포지토리 소개
 
 | 구분 | 프로젝트 | 설명 |
-|:---:|:---:|:---|
-| **Backend** | [**miko-main-server**](https://github.com/ProjectMIKO/miko-main-server) | - 미코 서비스의 회의방 관리 서버 <br> - 클라이언트, 자연어처리 서버, 화상 통화(오픈비두)는 main-server를 통해 통신<br> - 클라이언트에서 보내는 데이터(음성파일, 소켓 통신)를 받아 자연어 처리 서버로 보내고 키워드, STT, 회의록을 받아 클라이언트에게 돌려줌 |
-|            | [**miko-nlp-server**](https://github.com/ProjectMIKO/miko-nlp-server) | - 미코 서비스의 자연어 처리 서버<br> - 음성 파일을 받아 오디오 전처리 후 리턴제로 API에 STT 요청을 보내고 받은 STT를 main-server에 전송<br> - main-server로부터 대화 기록을 받아 OpenAI GPT에게 키워드 추출 및 회의록 요약 요청을 보내고 받아서 main-server에 전송 |
-|            | **openvidu-server**<br>                                                    | - 도커에 배포된 화상 통화 서버<br> - miko 레포지토리에는 포함되지 않음 |
-| **Frontend** | [**miko-frontend**](https://github.com/ProjectMIKO/miko-frontend) | - 미코 서비스의 프론트엔드 |
-| **Etc**     | [**stt-lab**](https://github.com/ProjectMIKO/stt-lab) | - 오디오 전처리 과정을 실험한 코드가 담긴 레포지토리<br> - 오디오 정규화, 다른 오디오 라이브러리 테스트, 소음 제거, 이퀄라이징, 형태소 분석기 등을 테스트함 |
-|            | [**MOM**](https://github.com/orgs/ProjectMIKO/projects/1/views/5) | - issue에 회의록을 작성한 레포지토리<br> |
+|:---:|:---------:|:---|
+| **Backend** | [**miko-main-server**](https://github.com/ProjectMIKO/miko-main-server) | - **미코 서비스의 메인 서버** <br> &nbsp;&nbsp;&nbsp;&nbsp;> 클라이언트에서 음성 파일을 받아 자연어 처리 서버로 전달하는 미들웨어 역할<br> &nbsp;&nbsp;&nbsp;&nbsp;> 회의방 소켓 통신 및 세션 관리 <br> &nbsp;&nbsp;&nbsp;&nbsp;> 키워드를 깊이에 따라 객체화하고 키워드를 추출하는 로직 |
+|            | [**miko-nlp-server**](https://github.com/ProjectMIKO/miko-nlp-server) | - **미코 서비스의 자연어 처리 서버** <br> &nbsp;&nbsp;&nbsp;&nbsp;> 음성 파일을 받아 전처리 후 리턴제로 API에 STT 요청 <br> &nbsp;&nbsp;&nbsp;&nbsp;> 대화 기록을 바탕으로 OpenAI GPT에게 키워드 추출 및 회의록 요약 요청 후 결과를 메인 서버로 전송 |
+|            | **openvidu**<br>                                                    | - **도커로 배포한 화상 통화 서버** |
+| **Frontend** | [**miko-frontend**](https://github.com/ProjectMIKO/miko-frontend) | - **미코 서비스의 프론트엔드** <br> &nbsp;&nbsp;&nbsp;&nbsp;> vis.js를 통해 키워드를 네트워크 그래프로 시각화 |
+| **Etc**     | [**stt-lab**](https://github.com/ProjectMIKO/stt-lab) | - **오디오 전처리 과정을 실험한 코드가 담긴 레포지토리**<br> &nbsp;&nbsp;&nbsp;&nbsp;> 오디오 정규화, 다른 오디오 라이브러리 테스트, 소음 제거, 이퀄라이징, 형태소 분석기 등을 테스트함 |
+|            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**MOM**](https://github.com/orgs/ProjectMIKO/projects/1/views/5)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | - **issue에 회의록을 작성한 레포지토리** |
+
+## 🔧 서비스 구조도
+![MIKO 아키텍쳐](https://github.com/user-attachments/assets/69982cc2-7a11-4191-930d-014a75b54deb)
 
 ## 📚 기술 스택
 - **Frontend**: TypeScript, Next.js

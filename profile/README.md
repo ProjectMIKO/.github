@@ -1,11 +1,15 @@
-# <img src="https://github.com/user-attachments/assets/35925543-ea0b-4807-b4d8-2af0381be45e" alt="MIKO_LOGO_Square" width="25" height="25"> MIKO
+# MIKO
 > Meeting In Keyword Out
 
 회의록 작성에 도움을 주는 다양한 서비스들이 있지만, 실시간으로 음성을 텍스트로 변환(STT)하고 키워드를 추출하여 회의 중간에 합류한 사람도 맥락을 쉽게 파악할 수 있도록 돕는 서비스는 없습니다. 
 MIKO는 이러한 필요를 충족시키기 위해 개발된 서비스로, 실시간 STT 변환 및 키워드 추출 기능을 통해 회의 참여자들이 보다 효율적으로 회의를 진행할 수 있도록 도와줍니다.
 
-- ~~[MIKO](https://www.mi-ko.site/)~~  서비스 종료로 프론트페이지만 동작
-- [MIKO 발표영상](https://www.youtube.com/watch?v=TdP1CQB0WRY)
+- ~~[MIKO](https://www.mi-ko.site/)~~  서비스 종료
+- ## [MIKO 발표영상](https://www.youtube.com/watch?v=TdP1CQB0WRY)
+<a href="https://www.youtube.com/watch?v=TdP1CQB0WRY">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/6dc91cd1-982e-450a-b36c-1117d20e5cf1" />
+</a>
+
 
 ## 팀 "해내야한다" 소개
 
